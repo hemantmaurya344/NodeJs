@@ -7,4 +7,5 @@ pipeline{
     stage('Deploy'){
       sh 'node server.js'
     }    
+  }
 }
