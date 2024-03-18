@@ -9,7 +9,8 @@ pipeline{
     stage('Build and Deploy'){
       steps{  
         sh 'npm install'
-        sh 'nohup node server.js &'
+        sh 'cd /home/hemant/Hemant/node'
+        sh 'sh runJs.sh'        
       }
     }    
   }
