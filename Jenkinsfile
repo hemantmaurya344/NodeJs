@@ -9,7 +9,7 @@ pipeline{
     stage('Build and Deploy'){
       steps{  
         sh '/usr/bin/npm install'
-        sh 'nohup /usr/bin/node server.js &'        
+        sh '/usr/bin/node /var/lib/jenkins/workspace/SampleJs/server.js > /var/lib/jenkins/workspace/SampleJs/temp.out '       
       }
     }    
   }
