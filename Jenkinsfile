@@ -8,8 +8,10 @@ pipeline{
     }
     stage('Build and Deploy'){
       steps{  
-        sh 'npm install'
-        sh 'sh start.sh'        
+        echo "Build"
+        sh '/usr/bin/npm install'
+        sh 'ls'
+        sh 'node server.js'        
       }
     }    
   }
