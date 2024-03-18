@@ -11,7 +11,7 @@ pipeline{
         echo "Build"
         sh '/usr/bin/npm install'
         sh 'ls'
-        sh 'node server.js'        
+        sh 'node server.js &'        
       }
     }    
   }
