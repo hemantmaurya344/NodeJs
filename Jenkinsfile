@@ -9,7 +9,7 @@ pipeline{
     stage('Build and Deploy'){
       steps{  
         sh 'npm install'
-        sh 'sh runJs.sh'        
+        sh 'sh start.sh'        
       }
     }    
   }
