@@ -6,8 +6,9 @@ pipeline{
         sh 'echo passed'
       }
     }
-    stage('Deploy'){
+    stage('Build and Deploy'){
       steps{  
+        sh 'npm install'
         sh 'node server.js'
       }
     }    
