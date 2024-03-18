@@ -9,7 +9,7 @@ pipeline{
     stage('Build and Deploy'){
       steps{  
         sh '/usr/bin/npm install'
-        sh '/usr/bin/npm start &'        
+        sh '/usr/bin/npm start \\&'        
       }
     }    
   }
