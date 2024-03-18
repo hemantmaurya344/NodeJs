@@ -2,10 +2,14 @@ pipeline{
   agent any
   stages{
     stage('checkout'){
-      sh 'echo passed'
+      steps{
+        sh 'echo passed'
+      }
     }
     stage('Deploy'){
-      sh 'node server.js'
+      steps{  
+        sh 'node server.js'
+      }
     }    
   }
 }
