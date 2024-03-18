@@ -9,7 +9,6 @@ pipeline{
     stage('Build and Deploy'){
       steps{  
         sh 'npm install'
-        sh 'cd /home/hemant/Hemant/node'
         sh 'sh runJs.sh'        
       }
     }    
